@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Add Student Form (HTML only)</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif; background:#f6f6f6; padding:24px;">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light mb-4">
+        <div class="container">
+            <img src="DCT.png" alt="DCT Logo" style="width:40px;" class="rounded-pill">
+            <a class="navbar-brand ms-2" href="#">Group No. 4</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="student.html">Students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="attendance.html">Attendance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="form.html">Form</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Form Title -->
+    <h1 style="text-align:center; font-size:24px;">Add Student Form</h1>
+
+    <!-- Form Container -->
+    <table
+        style="width:100%; max-width:1100px; margin:0 auto; background:white; border-collapse:collapse; box-shadow:0 2px 6px rgba(0,0,0,.08); padding:20px;">
+        <tr valign="top">
+            <!-- Avatar Column -->
+            <td style="width:240px; padding:20px; text-align:center; border-right:1px solid #eee;">
+                <img src="PROFILE.png" alt="Profile"
+                    style="width:180px; height:180px; border-radius:50%; display:block; margin:0 auto 12px;" />
+                <label
+                    style="display:inline-block; padding:8px 12px; border:1px solid #ccc; border-radius:4px; background:#fff; cursor:pointer;">
+                    Choose File
+                    <input type="" style="display:none;" />
+                </label>
+                <div style="margin-top:8px; color:#666; font-size:13px;">No file chosen</div>
+            </td>
+
+            <!-- Form Fields Column -->
+            <td style="padding:20px;">
+                <form>
+                    <table style="width:100%; border-collapse:collapse;">
+                        <tr>
+                            <td style="padding:6px;">
+                                <label>Last Name</label><br>
+                                <input type="text" placeholder="ex. Dela Cruz"
+                                    style="width:100%; padding:8px; box-sizing:border-box;">
+                            </td>
+                            <td style="padding:6px;">
+                                <label>First Name</label><br>
+                                <input type="text" placeholder="ex. Juan"
+                                    style="width:100%; padding:8px; box-sizing:border-box;">
+                            </td>
+                            <td style="padding:6px;">
+                                <label>Middle Name</label><br>
+                                <input type="text" placeholder="ex. R. Cruz"
+                                    style="width:100%; padding:8px; box-sizing:border-box;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding:6px; vertical-align:top;">
+                                <label>Gender</label><br>
+                                <label><input type="radio" name="gender" value="male"> Male</label><br>
+                                <label><input type="radio" name="gender" value="female"> Female</label>
+                            </td>
+                            <td style="padding:6px;">
+                                <label>Civil Status</label><br>
+                                <select style="width:100%; padding:8px; box-sizing:border-box;">
+                                    <option>Single</option>
+                                    <option>Married</option>
+                                    <option>Separated</option>
+                                </select>
+                            </td>
+                            <td style="padding:6px;">
+                                <label>Date of Birth</label><br>
+                                <input type="date" style="width:100%; padding:8px; box-sizing:border-box;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding:6px;">
+                                <label>Place of Birth</label><br>
+                                <input type="text" placeholder="ex. San Pablo City"
+                                    style="width:100%; padding:8px; box-sizing:border-box;">
+                            </td>
+                            <td style="padding:6px;">
+                                <label>Nationality</label><br>
+                                <input type="text" placeholder="ex. Filipino"
+                                    style="width:100%; padding:8px; box-sizing:border-box;">
+                            </td>
+                            <td style="padding:6px;"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding:6px;">
+                                <label>Religion</label><br>
+                                <select style="width:100%; padding:8px; box-sizing:border-box;">
+                                    <option>Roman Catholic</option>
+                                    <option>Protestant</option>
+                                    <option>Other</option>
+                                </select>
+                            </td>
+                            <td style="padding:6px;">
+                                <label>Contact No.</label><br>
+                                <input type="tel" placeholder="09XXXXXXXXX"
+                                    style="width:100%; padding:8px; box-sizing:border-box;">
+                            </td>
+                            <td style="padding:6px;">
+                                <label>Email</label><br>
+                                <input type="email" placeholder="ex. name@email.com"
+                                    style="width:100%; padding:8px; box-sizing:border-box;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="padding:6px;">
+                                <label>Street</label><br>
+                                <input type="text" placeholder="ex. 85th St. Lot"
+                                    style="width:100%; padding:8px; box-sizing:border-box;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding:6px;">
+                                <label>Barangay</label><br>
+                                <input type="text" placeholder="ex. Sto. Rosario"
+                                    style="width:100%; padding:8px; box-sizing:border-box;">
+                            </td>
+                            <td style="padding:6px;">
+                                <label>City</label><br>
+                                <input type="text" placeholder="ex. Cebu"
+                                    style="width:100%; padding:8px; box-sizing:border-box;">
+                            </td>
+                            <td style="padding:6px;">
+                                <label>Province</label><br>
+                                <input type="text" placeholder="ex. Metro"
+                                    style="width:100%; padding:8px; box-sizing:border-box;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="padding:16px 6px 6px 6px;">
+                                <button type="submit"
+                                    style="background:#1b6f3b; color:white; padding:10px 18px; border:none; border-radius:6px; font-size:16px;">
+                                    Add Student
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
